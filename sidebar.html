@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portal</title>
+</head>
+<body>
+    <style>
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .userimage {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #f4f4f4;
+            float: left;
+        }
+        .sidebar-content {
+            padding: 20px;
+            position: relative; /* Add this line to create a positioning context */
+        }
+        .sidebar div.verticalline {
+            width: 4px;
+            height: 100%; /* Set the height to 100% to match the sidebar's height */
+            background-color: #df0f0f;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .sidebar div p {
+            padding-bottom: 2px;
+        }
+        .sidebar li {
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: #333;
+            margin-top: 2px;
+            padding-left: 2px;
+        }
+        .sidebar li a:hover {
+            color: #666;
+        }
+        .sidebar ul.sub-menu {
+            margin-left: 20px;
+        }
+        .sidebar ul.sub-menu li a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .sidebar li:hover ul.sub-menu {
+            display: block;
+        }
+        .sidebar ul.sub-menu {
+            display: none;
+        }
+    </style>
+    
+    <header>
+        <h1>Welcome to the Portal</h1>
+    </header>
+    
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <ul>
+                <img src="user.jpeg" class="userimage" alt="">
+                <p><b>Joseph Kamau</b></p>
+                <p>MKT002</p>
+            </ul>
+        </div>
+        <div class="verticalline"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="profile.php">My Profile</a></li>
+            <li><a href="#">Reports</a></li>
+            <li>
+                <a href="#">Leave</a>
+                <ul class="sub-menu">
+                    <li><a href="leave.php">Apply Leave</a></li>
+                    <li><a href="#">Leave History</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1>welcome</h1>
+        <p>our portal</p>
+    </div>
+</body>
+</html>
